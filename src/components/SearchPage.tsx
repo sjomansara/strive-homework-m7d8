@@ -38,7 +38,7 @@ const SearchPage = () => {
         <div>
             <MyNavbar />
             <MyJumbotron />
-            <Form className="ml-5">
+            <Form className="ml-5 mb-5">
                 <Row>
                 <textarea value={queryString} onChange={handleSearchChange} autoComplete="off" placeholder=" Search for a song or an artist" style={{borderRadius: "5px", width: "800px", height: "40px", display: "block", marginLeft: "250px", outline: "none", resize: "none"}}/>
                 <Button className="ml-2" variant="outline-light" onClick={onSearch}>Search</Button>
