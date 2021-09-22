@@ -12,7 +12,7 @@ const DropdownItem = (props: Props) => {
             <Col xs={2} className="d-flex text-white">
                 <img src={props.picture} />
             </Col>
-            <Col xs={3} className="d-flex text-white">
+            <Col xs={4} className="d-flex text-white">
                 {props.title}
             </Col>
             <Col xs={3} className="d-flex text-white">
