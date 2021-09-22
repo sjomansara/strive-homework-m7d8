@@ -1,0 +1,26 @@
+import { Row, Col } from 'react-bootstrap'
+
+interface Props {
+    title: string,
+    artist: string,
+    picture: string
+}
+
+const DropdownItem = (props: Props) => {
+    return (
+        <Row className="mx-0 mt-3 p-3" id="margin" style={{ border: '1px solid #00000033', borderRadius: 4 }}>
+            <Col xs={3} className="d-flex text-white">
+                <img src={props.picture} />
+            </Col>
+            <Col xs={3} className="d-flex text-white">
+                {props.title}
+            </Col>
+            <Col xs={3} className="d-flex text-white">
+                {props.artist}
+            </Col>
+        </Row>
+    )
+}
+
+
+export default DropdownItem
